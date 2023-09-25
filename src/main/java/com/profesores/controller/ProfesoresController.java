@@ -38,7 +38,7 @@ public class ProfesoresController {
 		return new ResponseEntity<Profesores>(p, HttpStatus.OK);
 	}
 	
-	@GetMapping("buscar-por-nombre/{id}")
+	@GetMapping("buscar-por-id/{id}")
 	ResponseEntity<Profesores> buscar(@PathVariable("id")int id){
 		Profesores p = logic.buscar(id);
 		return new ResponseEntity<Profesores>(p, HttpStatus.OK);
